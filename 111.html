@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法海 · 探索无限可能</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <style>
+        .calligraphy-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .artistic-subtitle {
+            font-family: 'Dancing Script', cursive;
+        }
+        .content-font {
+            font-family: 'ZCOOL XiaoWei', serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FF9F1C 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+        }
+        .hobby-tag {
+            position: relative;
+            overflow: hidden;
+        }
+        .hobby-tag::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #E63946, #1D3557);
+            transition: width 0.3s ease;
+        }
+        .hobby-tag:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen p-4">
+    <div class="max-w-md mx-auto bg-white rounded-3xl overflow-hidden shadow-xl">
+        <!-- 头部区域 -->
+        <div class="gold-gradient p-8 text-white relative">
+            <div class="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
+                <div class="w-24 h-24 rounded-full bg-white p-2 border-4 border-amber-100 shadow-lg">
+                    <div class="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-theater-masks text-5xl text-amber-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <h1 class="text-4xl md:text-5xl calligraphy-title">法海</h1>
+                <p class="text-lg artistic-subtitle mt-1 opacity-90">ESFJ人格探索者</p>
+            </div>
+        </div>
+
+        <!-- 身份标签区 -->
+        <div class="px-6 pt-20 pb-6">
+            <div class="flex flex-wrap gap-2 justify-center">
+                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs content-font">企业文化讲师</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-xs content-font">社群策划师</span>
+                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs content-font">情感分析师</span>
+                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs content-font">戏剧导师</span>
+                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs content-font">心理探索者</span>
+                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs content-font">玄学实践者</span>
+                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs content-font">食物焚化炉</span>
+            </div>
+        </div>
+
+        <!-- 擅长领域 -->
+        <div class="px-6 pb-4">
+            <h2 class="text-xl font-bold text-amber-800 mb-4 flex items-center content-font">
+                <i class="fas fa-star text-red-500 mr-2"></i>擅长领域
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- 社群运营 -->
+                <div class="card-hover bg-gradient-to-r from-amber-50 to-amber-100 p-4 rounded-2xl border border-amber-200">
+                    <div class="flex items-center">
+                        <div class="bg-amber-200 p-3 rounded-xl mr-4">
+                            <i class="fas fa-users-cog text-amber-700 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-amber-800 text-lg content-font">交友社群运营</h3>
+                            <p class="text-sm text-gray-600 mt-1 content-font">多元主题策划·活动带领·氛围营造</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 情感解码 -->
+                <div class="card-hover bg-gradient-to-r from-red-50 to-red-100 p-4 rounded-2xl border border-red-200">
+                    <div class="flex items-center">
+                        <div class="bg-red-200 p-3 rounded-xl mr-4">
+                            <i class="fas fa-heart text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-red-700 text-lg content-font">情感解码</h3>
+                            <p class="text-sm text-gray-600 mt-1 content-font">亲密关系分析·情感引导陪跑·两性交往答疑</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 戏剧舞台 -->
+                <div class="card-hover bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-2xl border border-blue-200">
+                    <div class="flex items-center">
+                        <div class="bg-blue-200 p-3 rounded-xl mr-4">
+                            <i class="fas fa-theater-masks text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-700 text-lg content-font">戏剧舞台</h3>
+                            <p class="text-sm text-gray-600 mt-1 content-font">即兴戏剧工·舞台剧·脱口秀·戏剧工作坊</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 身心灵探索 -->
+                <div class="card-hover bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-2xl border border-green-200">
+                    <div class="flex items-center">
+                        <div class="bg-green-200 p-3 rounded-xl mr-4">
+                            <i class="fas fa-star-of-david text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-green-700 text-lg content-font">身心灵探索</h3>
+                            <p class="text-sm text-gray-600 mt-1 content-font">欧卡疗愈·塔罗占卜·星盘解读·MBTI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最近沉迷 -->
+        <div class="px-6 py-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-t-3xl -mx-6 mt-4">
+            <h2 class="text-xl font-bold text-amber-800 mb-4 flex items-center content-font">
+                <i class="fas fa-fire-alt text-red-500 mr-2"></i>最近沉迷
+            </h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="hobby-tag bg-white p-4 rounded-xl shadow-sm flex items-center border border-amber-100">
+                    <i class="fas fa-utensils text-amber-600 mr-3 text-lg w-6 text-center"></i>
+                    <span class="text-base content-font">美食探店</span>
+                </div>
+                <div class="hobby-tag bg-white p-4 rounded-xl shadow-sm flex items-center border border-red-100">
+                    <i class="fas fa-money-bill-wave text-red-500 mr-3 text-lg w-6 text-center"></i>
+                    <span class="text-base content-font">财富流带盘</span>
+                </div>
+                <div class="hobby-tag bg-white p-4 rounded-xl shadow-sm flex items-center border border-blue-100">
+                    <i class="fas fa-coins text-blue-500 mr-3 text-lg w-6 text-center"></i>
+                    <span class="text-base content-font">投资理财</span>
+                </div>
+                <div class="hobby-tag bg-white p-4 rounded-xl shadow-sm flex items-center border border-green-100">
+                    <i class="fas fa-video text-green-500 mr-3 text-lg w-6 text-center"></i>
+                    <span class="text-base content-font">短视频创作</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部标语 -->
+        <div class="gold-gradient p-5 text-white text-center">
+            <p class="text-lg artistic-subtitle italic">"海有界，法无边，用有限的生命探索无限的可能性"</p>
+        </div>
+    </div>
+</body>
+</html>
